@@ -1,0 +1,30 @@
+<script runat="server">
+sub submit(sender As Object, e As EventArgs)
+if Page.IsValid then
+  lbl.Text="The page is valid!"
+else
+  lbl.Text="The page is not valid!"
+end if
+end sub 
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+Enter a US zip code:
+<asp:TextBox id="txtbox1" runat="server" />
+<br><br>
+<asp:Label id="lbl" runat="server" />
+<br>
+<asp:RegularExpressionValidator
+ControlToValidate="txtbox1"
+ValidationExpression="\d{5}"
+EnableClientScript="false"
+ErrorMessage="The zip code must be 5 numeric digits!"
+runat="server" />
+</form>
+
+</body>
+</html>

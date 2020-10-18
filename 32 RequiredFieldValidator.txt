@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+Name: <asp:TextBox id="name" runat="server" />
+<br>
+Age: <asp:TextBox id="age" runat="server" />
+<br><br>
+<asp: Button runat="server" Text="Submit" />
+<br><br>
+<asp:RequiredFieldValidator
+ControlToValidate="name"
+Text="The name field is required!"
+runat="server" />
+</form>
+
+</body>
+</html>

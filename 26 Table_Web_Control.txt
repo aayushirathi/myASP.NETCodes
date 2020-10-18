@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat=server>
+<asp:Table runat="server" CellPadding="5"
+GridLines="horizontal" HorizontalAlign="Center">
+  <asp:TableRow>
+   <asp:TableCell>1</asp:TableCell>
+   <asp:TableCell>2</asp:TableCell>
+  </asp:TableRow>
+  <asp:TableRow>
+   <asp:TableCell>3</asp:TableCell>
+   <asp:TableCell>4</asp:TableCell>
+  </asp:TableRow>
+</asp:Table>
+<br>
+<asp:Table runat="server" CellPadding="5"
+GridLines="vertical" HorizontalAlign="Center">
+   <asp:TableRow>
+     <asp:TableCell>1</asp:TableCell>
+     <asp:TableCell>2</asp:TableCell>
+   </asp:TableRow>
+   <asp:TableRow>
+     <asp:TableCell>3</asp:TableCell>
+     <asp:TableCell>4</asp:TableCell>
+   </asp:TableRow>
+</asp:Table>
+</form>
+
+</body>
+</html>

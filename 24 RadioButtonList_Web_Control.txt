@@ -1,0 +1,24 @@
+<script runat="server">
+Sub submit(sender As Object, e As EventArgs)
+  label1.Text="You selected " & radiolist1.SelectedItem.Text
+End Sub
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+<asp:RadioButtonList id="radiolist1" runat="server">
+  <asp:ListItem selected="true">Item 1</asp:ListItem>
+  <asp:ListItem>Item 2</asp:ListItem>
+  <asp:ListItem>Item 3</asp:ListItem>
+  <asp:ListItem>Item 4</asp:ListItem>
+</asp:RadioButtonList>
+<br>
+<asp:Button text="Submit" OnClick="submit" runat="server"/>
+<p><asp:Label id="Label1" runat="server"/></p>
+</form>
+
+</body>
+</html>
