@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+<asp:HyperLink
+ImageURL="img_w6.gif"
+NavigateURL="http://www.w3schools.com"
+Text="Visit W3Schools!"
+Target="_blank"
+runat="server"/>
+</form>
+
+</body>
+</html>

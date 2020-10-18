@@ -1,0 +1,29 @@
+<script runat="server">
+Sub Check(sender As Object, e As EventArgs)
+if check1.Checked then
+work.Text=home.Text
+else
+work.Text=""
+end if
+End Sub
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+<p>Home Phone:
+<asp:TextBox id="home" runat="server" />
+<br>
+Work Phone:
+<asp:TextBox id="work" runat="server" />
+<asp:CheckBox id="check1"
+Text="Same as home phone" TextAlign="Right"
+AutoPostBack="True" OnCheckedChanged="Check"
+runat="server" />
+</p>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<script runat="server">
+ Sub change_url(sender As Object, e As AdCreatedEventArgs)
+ e.NavigateURL="http://www.w3schools.com"
+ End Sub
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+<asp:AdRotator AdvertisementFile="Ad1.xml">
+runat="server" OnAdCreated="change_url"
+target="_blank" />
+</form>
+
+<p><a href="ad1.xml" target="_blank">View XML file</a></p>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<%@ Import Namespace="System.Data" %>
+
+<script runat="server">
+sub Page_Load
+if Not Page.IsPostBack then
+ dim mycdcatalog=New DataSet
+ mycdcatalog.ReadXml(MapPath("cdcatalog.xml"))
+ cdcatalog.DataSource=mycdcatalog
+ cdcatalog.DataBind()
+endif
+end sub
+</script>
+ 
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+<asp:DataList
+id="cdcatalog"
+gridlines="Both"
+runat="server"
+
+<HeaderTemplate>
+My CD Catalog
+</HeaderTemplate>
+
+<ItemTemplate>
+"<%#Container.DataItem("title")%>" of
+<%#Container.DataItem("artist")%> -
+$<%#Container.DataItem("price")%>
+</ItemTemplate>
+
+<FooterTemplate>
+* Aayushi Rathi
+</FooterTemplate>
+
+</asp:DataList>
+</form>
+
+</body>
+</html>
