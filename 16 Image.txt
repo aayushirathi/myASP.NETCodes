@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+<asp:Image
+runat="server"
+AlternateText="W3Schools"
+ImageUrl="img_w6.gif"/>
+</form>
+
+</body>
+</html>

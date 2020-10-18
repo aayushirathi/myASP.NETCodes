@@ -1,0 +1,25 @@
+<script runat="server">
+Sub Page_Load(sender As Object, e As EventArgs)
+ if check
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+<asp:Panel id="panel1"
+runat="server" BackColor="#ff0000"
+Height="100px" Width="100px">
+Hello World!
+</asp:Panel>
+<asp:CheckBox id="check1"
+Text="Hide Panel control"
+runat="server"/>
+<br><br>
+<asp:Button Text="Reload" runat="server" />
+</form>
+
+</body>
+</html>

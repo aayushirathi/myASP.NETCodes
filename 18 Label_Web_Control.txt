@@ -1,0 +1,20 @@
+<script runat="server">
+Sub submit(Sender As Object, e As EventArgs)
+ label1.Text=txt1.Text
+End Sub
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+Write some text:
+<asp:TextBox id="txt1" Width="200" runat="server" />
+<asp:Button id="b1" Text="Copy to Label" OnClick="submit"
+runat="server" />
+<p><asp:Label id="label1" runat="server" /></p>
+</form>
+
+</body>
+</html>

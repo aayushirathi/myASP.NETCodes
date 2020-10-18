@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+<asp:XML DocumentSource="cdcatalog.xml"
+TransformSource="cdcatalog.xsl" runat="server" />
+</form>
+
+<p><a href="cdcatalog.xml" target="_blank">View XML file</a></p>
+<p><a href="cdcatalog.xsl" target="_blank">View XSL file</a></p>
+
+</body>
+</html>

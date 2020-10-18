@@ -1,0 +1,21 @@
+<script runat="server">
+Sub getCoordinates(sender As Object, e As ImageClickEventArgs)
+mess.Text="Coordinates: " & e.x & "," & e.y
+End Sub
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<form runat="server">
+<p>Click on the image:</p>
+<asp:ImageButton
+runat="server"
+ImageUrl="smiley.gif"
+OnClick="getCoordinates"/>
+<p><asp:label id="mess" runat="server"/></p>
+</form>
+
+</body>
+</html>
