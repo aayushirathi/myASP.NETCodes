@@ -1,0 +1,11 @@
+@Imports System.Data
+@Code
+Dim dataSet = new DataSet()
+dataSet.ReadXmlSchema(Server.MapPath("data.xsd"))
+dataSet.ReadXml(Server.MapPath("data.xml"))
+Dim dataView = new DataView(dataSet.Tables(0))
+Dim myChart = new Chart(600,400)
+myChart.AddTitle("Sales per Employee")
+myChart.AddSeries("Default","Pie",,,,,dataView,"Name",dataView,"Sales")
+myChart.Write()
+End Code

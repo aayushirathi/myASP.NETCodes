@@ -1,0 +1,20 @@
+@Code
+Dim weekday=DateTime.Now.DayOfWeek
+Dim day=weekday.ToString()
+Dim message=""
+End COde
+<html>
+<body>
+@Select Case day
+Case "Monday"
+    message="This is the first weekday."
+Case "Thursday"
+    message="Only one day before weekend."
+Case "Friday"
+    message="Tomorrow is weekend!"
+Case Else
+    message="Today is " & day
+End Select
+<p>@message</p>
+</body>
+</html>

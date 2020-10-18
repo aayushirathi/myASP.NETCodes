@@ -1,0 +1,8 @@
+<html>
+<body>
+@RenderPage("header.vbhtml")
+<h1>Hello Web Pages</h1>
+<p>This is a paragraph</p>
+@RenderPage("footer.vbhtml")
+</body>
+</html>
